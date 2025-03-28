@@ -13,7 +13,15 @@ public class Cliente extends Cidade     {
     private String endereco;
 
     private Cidade cidade; // seta do diagrama de classe // 1 cidade tem vários clientes
-    private ArrayList listaPokemon = new ArrayList();
+    
+    private ArrayList<Pokemon> listaPokemon = new ArrayList<Pokemon>();
+    
+    public ArrayList<Pokemon> getListaPokemons(){
+        return listaPokemon;
+    }
+    public void setListaPokemons(ArrayList<Pokemon> listaPokemon) {
+        this.listaPokemon = listaPokemon;
+    }
 
 
     //construtor

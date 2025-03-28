@@ -11,7 +11,7 @@ public class Main {
         joinville.setNome("Joinville");
         joinville.setEstado("Santa Catarina");
 
-        
+        Pokemon blaziken = new Pokemon("Blaziken");
         Pokemon charmander = new Pokemon("Charmander");
 
         Cliente zezinho = new Cliente("Zezinho");
@@ -19,6 +19,18 @@ public class Main {
         zezinho.setCidade(joinville);
 
         zezinho.getListaPokemon().add(charmander);
+        zezinho.getListaPokemon().add(blaziken);
+        
+
+        for(int i=0; i<zezinho.getListaPokemon().size();i++){
+            var umPokemon = zezinho.getListaPokemon().get(i);
+            System.out.println(umPokemon);
+        }
+        for(var umPokemon : zezinho.getListaPokemon()){
+            System.out.println(umPokemon);
+        }
+
+        zezinho.getListaPokemon().stream().forEach(System.out::println);
 
         Cliente mariazinha = new Cliente();
         mariazinha.setNome ("Mariazinha");
