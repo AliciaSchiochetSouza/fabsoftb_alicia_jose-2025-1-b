@@ -5,13 +5,12 @@
 - Jose Willian Silva Alves 
 
 ## Sistema para escola de musica-  Nota certa- Para um gerenciamento sem erros
-Controle de entradas e saídas de instrumentos para a manutenção. 
+Controle de entradas e saídas 
 
 ### Administrador
 * Gerenciar acervo (cadastrar, atualizar e consultar instrumentos).
 *  Controlar empréstimos (liberar, monitorar devoluções e bloqueios).
 * Histórico de empréstimos (buscar por aluno, instrumento ou data).
-* Gerenciar manutenção (priorizar consertos com base na urgência).
 * Gerenciar alunos (cadastrar, editar e visualizar perfis).
 
 ### Aluno
@@ -27,12 +26,12 @@ Controle de entradas e saídas de instrumentos para a manutenção.
 
 ## Gerenciamento do Acervo
 - Como administrador da escola de música, eu gostaria de inserir e atualizar os dados dos instrumentos no acervo, para que o estoque esteja sempre atualizado e reflita a disponibilidade real dos instrumentos.
-- Campos: Código do instrumento, Nome, Tipo (família), Sobressalentes (sim/não), Status (disponível/em manutenção).
+- Campos: Código do instrumento, Nome, Tipo (família), Sobressalentes (sim/não)
 
 
 ## Empréstimo de Instrumentos
 - Como administrador da escola de música, eu gostaria de disponibilizar instrumentos para os alunos, para que eles possam utilizá-los conforme necessário.
-- Critérios de aceite: Verificar se o instrumento está em manutenção antes de liberá-lo.
+
 
 ## Consulta de Históricos
 - Como administrador da escola de música, eu gostaria de visualizar o histórico de empréstimos dos alunos, para que possa acompanhar o uso dos instrumentos.
@@ -41,14 +40,6 @@ Controle de entradas e saídas de instrumentos para a manutenção.
 ## Acompanhamento de Empréstimos
 - Como administrador da escola de música, eu gostaria de ver quais alunos estão excedendo o tempo de empréstimo, para que possa tomar as providências necessárias para devolução.
 
-## Gerenciamento de Manutenção
-- Como administrador da escola de música, eu gostaria de visualizar e adicionar instrumentos para manutenção, para que possam ser reparados antes de serem disponibilizados novamente.
-
-## Critérios de priorização:
-- Nível de dificuldade do concerto (Fácil, Médio, Difícil).
-- Uso próximo em um concerto (Sim/Não).
-- Tempo estimado de reparo (30 minutos, 1 hora, 2 horas).
-- Tempo máximo disponível: 6 horas por período de trabalho.
 
 ## Visualização e Atualização de Alunos
 - Como administrador da escola de música, eu gostaria de consultar e editar os dados dos alunos, para que possa manter as informações sempre atualizadas.
@@ -56,7 +47,7 @@ Controle de entradas e saídas de instrumentos para a manutenção.
 
 ## Navegação no Sistema
 Como administrador da escola de música, eu gostaria de ter uma barra de navegação, para que possa acessar rapidamente as principais seções do sistema.
-Itens da NAVBAR: Home, Acervo, Alunos, Manutenção.
+Itens da NAVBAR: Home, Acervo, Alunos
 
 # Histórias de Usuário Aluno
 
