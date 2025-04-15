@@ -10,13 +10,12 @@ import jakarta.persistence.Id;
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
     //é bom tipificar os campos
     @Column(length = 1000,nullable = false)
     private String nome;
     @Column(length = 1000,nullable = false)
     private String endereco;
-    @Column(nullable = false)
     private int telefone;
     private String email;
     private int dataNascimento;
@@ -24,11 +23,11 @@ public class Aluno {
     private String sexo;
 
     // Getters e Setters
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

@@ -7,7 +7,7 @@ import java.time.LocalDate;
 public class Emprestimo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     @ManyToOne
     private Aluno aluno;
@@ -19,11 +19,11 @@ public class Emprestimo {
     private LocalDate dataFim;
 
     // Getters e Setters
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
