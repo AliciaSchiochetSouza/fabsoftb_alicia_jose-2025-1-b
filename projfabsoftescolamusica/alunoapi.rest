@@ -6,13 +6,31 @@ POST http://localhost:8080/api/v1/aluno
 Content-Type: application/json
 
 {
+    "id": 1,
     "nome": "João",
     "cpf": "12345678901",
     "dataNascimento": "2000-01-01",
     "telefone": "123456789",
     "email": "joão@gmail", 
     "endereco": "Rua A, 123",
-    "sexo": "M",
-    "id": 1
-
+    "sexo": "M"
 }
+
+### API ALUNO - PUT
+PUT http://localhost:8080/api/v1/aluno/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "nome": "João da Costa",
+    "cpf": "12345678901",
+    "dataNascimento": "2000-01-01",
+    "telefone": "123456789",
+    "email": "joão@gmail", 
+    "endereco": "Rua A, 123",
+    "sexo": "M"
+}
+
+### API ALUNO - DELETE
+DELETE http://localhost:8080/api/v1/aluno/1
+Content-Type: application/json
