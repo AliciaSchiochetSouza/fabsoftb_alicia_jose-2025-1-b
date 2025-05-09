@@ -31,14 +31,10 @@ public class InstrumentoController {
 
     @PostMapping
     public ResponseEntity<Instrumento> postInstrumento(@RequestBody Instrumento instrumento){
-        if(instrumento == null){
+        if (instrumento == null) {
             return ResponseEntity.badRequest().build();
         }
-        if (instrumento.getId() == 0){
-            service.save(instrumento);
-            return new ResponseEntity<Instrumento>(instrumento, HttpStatus.OK);
-        } 
-        if (instrumento.getId() == 0){
+        if (instrumento.getId() == 0) {
             service.save(instrumento);
             return new ResponseEntity<Instrumento>(instrumento, HttpStatus.OK);
         }

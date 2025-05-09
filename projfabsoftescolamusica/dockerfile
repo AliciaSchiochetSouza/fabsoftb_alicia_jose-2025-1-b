@@ -21,7 +21,7 @@ FROM eclipse-temurin:17-jre-alpine AS production
 WORKDIR /app
 
 # Copia o arquivo JAR gerado na etapa de build
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/projfabsoftescolamusica-0.0.1-SNAPSHOT.jar app.jar
 
 # Define o profile ativo como 'dev'
 #ENV SPRING_PROFILES_ACTIVE=dev
