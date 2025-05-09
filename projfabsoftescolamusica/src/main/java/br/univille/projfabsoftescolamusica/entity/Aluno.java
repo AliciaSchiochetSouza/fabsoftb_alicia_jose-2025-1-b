@@ -6,20 +6,22 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity
+@Entity // identificar que é uma entidade JPA
 public class Aluno {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // mostrar ao java que é a chave primária/id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // gerar o id automaticamente
     private long id;
     //é bom tipificar os campos
-    @Column(length = 1000,nullable = false)
+    @Column(length = 1000,nullable = false) // definir o tamanho máximo do campo e 
+    // identificar que é um campo obrigatório
     private String nome;
-    @Column(length = 1000,nullable = false)
+    @Column(length = 1000)
     private String endereco;
-    private int telefone;
+    private String telefone;
     private String email;
-    private int dataNascimento;
-    private int cpf;
+    private String dataNascimento;
+    @Column(length = 11, nullable = false) // CPF tem 11 dígitos
+    private String cpf;
     private String sexo;
 
     // Getters e Setters
@@ -47,11 +49,11 @@ public class Aluno {
         this.endereco = endereco;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
@@ -63,19 +65,19 @@ public class Aluno {
         this.email = email;
     }
 
-    public int getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(int dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 

@@ -16,19 +16,24 @@ import org.springframework.web.bind.annotation.RestController;
 import br.univille.projfabsoftescolamusica.entity.Aluno;
 import br.univille.projfabsoftescolamusica.service.AlunoService;
 
-@RestController // envia JSON e recebe JSON
-@RequestMapping("/api/v1/aluno") //talvez falte um s no alunos
+@RestController // envia JSON e recebe JSON, pra fazer uma API
+@RequestMapping("/api/v1/aluno") //talvez falte um s no alunos / levar o endereço para buscar no navegador
 public class AlunoController {
 
+    // no controlller, coloca váriavel de AlunoService
     @Autowired
     private AlunoService service;
 
+    //GET
     @GetMapping
     public ResponseEntity<List<Aluno>> getAluno(){
         var listaAluno = service.getAll();
         return new ResponseEntity<List<Aluno>>(listaAluno, HttpStatus.OK);
         
     }
+
+
+    //POST
     @PostMapping
     public ResponseEntity<Aluno> postAluno(@RequestBody Aluno aluno){
         if(aluno == null){
@@ -42,9 +47,12 @@ public class AlunoController {
         return ResponseEntity.badRequest().build();
     }
 
+
+    //PUT
     @PutMapping("/{id}")
     public ResponseEntity<Aluno> putAluno(@PathVariable long id, @RequestBody Aluno aluno){
-        if (id <= 0 || aluno == null){ // identificação do aluno nõa pode ser 0 ou menor, e aluno nõa pode estar em branco(null)
+        if (id <= 0 || aluno == null){ // identificação do aluno não pode ser 0 ou menor,
+        // e aluno não pode estar em branco(null)
             return ResponseEntity.badRequest().build();
         }
 
@@ -66,6 +74,7 @@ public class AlunoController {
         return new ResponseEntity<Aluno>(alunoAntigo, HttpStatus.OK);
     }
 
+    //DELETE    
     @DeleteMapping("/{id}")
     public ResponseEntity<Aluno> deleteAluno(@PathVariable long id){
         if(id <= 0){
@@ -78,7 +87,6 @@ public class AlunoController {
         }
 
         service.delete(id);
-
         return new ResponseEntity<Aluno> (alunoExcluido, HttpStatus.OK);
     }
 }

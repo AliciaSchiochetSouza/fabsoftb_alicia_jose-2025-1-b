@@ -8,6 +8,5 @@ public interface AlunoService {
     Aluno save(Aluno aluno);
     List<Aluno> getAll();
     Aluno getByID(Long id);
-    Aluno delete(Long id);
-    
+    Aluno delete(Long id);   
 }

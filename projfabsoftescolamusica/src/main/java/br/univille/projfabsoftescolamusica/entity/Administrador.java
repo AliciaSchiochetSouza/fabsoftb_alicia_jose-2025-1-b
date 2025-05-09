@@ -12,6 +12,7 @@ public class Administrador {
     private long id;
     private String nome;
     private String email;
+    private String matriculaADM;
 
     // Getters e Setters
     public long getId() {
@@ -36,5 +37,13 @@ public class Administrador {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getMatriculaADM() {
+        return matriculaADM;
+    }
+
+    public void setMatriculaADM(String matriculaADM) {
+        this.matriculaADM = matriculaADM;
     }
 }
