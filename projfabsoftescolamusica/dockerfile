@@ -23,8 +23,8 @@ WORKDIR /app
 # Copia o arquivo JAR gerado na etapa de build
 COPY --from=build /app/target/*.jar app.jar
 
-# Define o profile ativo como 'dev' (descomente se necessário)
-# ENV SPRING_PROFILES_ACTIVE=dev
+# Define o profile ativo como 'dev'
+ENV SPRING_PROFILES_ACTIVE=dev
 
 # Expõe a porta padrão do Spring Boot
 EXPOSE 8080
