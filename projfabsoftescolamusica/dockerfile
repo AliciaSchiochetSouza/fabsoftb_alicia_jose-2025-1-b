@@ -4,7 +4,7 @@ FROM maven:3.9.2-eclipse-temurin-17 AS build
 # Define o diretório de trabalho
 WORKDIR /app
 
-# Copia o arquivo pom.xml e baixa as dependências
+# Copia o arquivo pom.xml e as dependências
 COPY pom.xml ./
 RUN mvn dependency:go-offline -B
 
@@ -24,10 +24,10 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Define o profile ativo como 'dev'
-ENV SPRING_PROFILES_ACTIVE=dev
+#ENV SPRING_PROFILES_ACTIVE=dev
 
 # Expõe a porta padrão do Spring Boot
 EXPOSE 8080
 
 # Comando para iniciar a aplicação
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app.jar"]
