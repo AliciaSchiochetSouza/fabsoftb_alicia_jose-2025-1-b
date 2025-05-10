@@ -25,5 +25,5 @@ jobs:
       # Build and push Docker image to GitHub Container Registry
       - name: Build and Push Docker Image
         run: |
-          docker build -t ghcr.io/AliciaSchiochetSouza/fabsoftb_Alicia_Jose-2025-1-b/rojfabsoftescolamusica:latest ./projfabsoftescolamusica
-          docker push ghcr.io/AliciaSchiochetSouza/fabsoftb_Alicia_Jose-2025-1-b/rojfabsoftescolamusica:latest
+          docker build -t ghcr.io/AliciaSchiochetSouza/fabsoftb_alicia_jose-2025-1-b/rojfabsoftescolamusica:latest ./projfabsoftescolamusica
+          docker push ghcr.io/AliciaSchiochetSouza/fabsoftb_alicia_jose-2025-1-b/rojfabsoftescolamusica:latest
