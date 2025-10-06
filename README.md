@@ -64,3 +64,66 @@ Como aluno da escola de música, eu gostaria de ver o tempo restante do meu empr
 ## Bloqueio e Alerta de Atraso
 - Como aluno da escola de música, eu gostaria de receber um alerta caso eu não devolva o instrumento no prazo, para que eu saiba que estou em atraso.
 - Como aluno da escola de música, eu gostaria de ser bloqueado de pegar outro instrumento caso não devolva o anterior no prazo, para que eu cumpra as regras do sistema.
+
+## Livro Eng Software Moderna cap 4- 06/10/2025
+Definição das características da arquitetura
+
+##-Auditoria, Desempenho, Segurança, Requisitos, Dados, Legalidade e Escalabilidade- uma solução de software consiste nos requisitos do domínio e nas características da arquitetura.
+
+- Definição dos requisitos
+- Cada característica precisa atender esses três critérios.
+	-Especifica 
+	-Deve ter influência estrutural
+	-Essencial ou importante
+
+Recursos diferenciais
+- Explícita: Especifica uma consideração do design fora do domínio
+
+- Implícita: Influencia um aspecto estrutural do design
+
+Características operacionais
+- Disponibilidade: (24/7)
+- Continuidade: Capacidade de recuperação de desastres.
+- Desempenho: Testes de estresse.
+- Recuperabilidade: Requisitos de continuidade
+- Confiabilidade/Segurança: Avalia se o sistema precisa ser à prova de falhas ou se tem uma missão crítica no modo como afeta a vida das pessoas.
+- Robustez: Capacidade de lidar com condições de erro.
+- Escalabilidade: A capacidade de o sistema rodar e operar quando o número de usuários ou requisições aumenta.
+
+Características estruturais
+- Configuração
+- Extensão
+- Instabilidade
+- Aproveitamento/ reutilização
+- Localização
+- Manutenção
+- Portabilidade: transferir um sistema para outro produto ou componente
+- Suporte
+- Atualização
+
+Características transversais da arquitetura
+- Acessibilidade
+- Armazenamento
+- Autenticação
+- Autorização
+- Legalidade
+- Privacidade
+- Segurança: usar o sistema com eficiência e satisfação.
+- Suporte
+- Usabilidade/ viabilidade: usar o sistema com eficiência.
+
+Adequação funcional: 
+- Representa o grau no qual um produto ou um sistema fornece funções que atendem as necessidades declaradas e implícitas quando usados sob certas condições.
+
+Totalidade funcional:
+- O grau no qual o conjunto de funções cobre todas as tarefas especificas e objetivos do usuário.
+
+Correção funcional:
+- O grau no qual um produto ou um sistema fornece resultados corretos com o grau de precisão necessário.
+
+Adequação funcional: 
+- O grau no qual as funções facilitam a realização de tarefas e objetivos específicos.
+
+Trade-offs  arquitetura menos pior
+- Numa mire na melhor arquitetura, mas na arquitetura menos pior.
+
